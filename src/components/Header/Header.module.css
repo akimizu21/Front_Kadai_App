@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0.4%;
+}
+
+.logo {
+  height: 24px;
+}
+
+.navList {
+  display: flex;
+  gap: 8px;
+}
+
+.navItem {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .navList {
+      flex-direction: column;
+      position: absolute;
+      top: -1px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      gap: 1px;
+  }
+}
