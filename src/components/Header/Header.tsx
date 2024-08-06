@@ -2,6 +2,7 @@
  * Header
  */
 import React from 'react';
+import Image from 'next/image';
 import Button from '../Button/Button';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 /* styles */
@@ -15,7 +16,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <img src="img/logo.png" alt="logo" className={styles.logo} />
+      <Image src="img/logo.png" alt="logo" width={100} height={24}/>
       <nav>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
